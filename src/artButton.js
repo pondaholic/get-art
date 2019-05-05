@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { API_URI } from './config';
 
 export function RetrieveArt() {
 	const [count, setCount] = useState(0);
@@ -8,7 +9,7 @@ export function RetrieveArt() {
 			<button
 				onClick={() => {
 					setCount(count + 1);
-					console.log(count);
+					console.log(API_URI);
 				}}
 			>
 				Click Here.
